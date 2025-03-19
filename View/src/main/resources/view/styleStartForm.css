@@ -1,0 +1,64 @@
+.anchor-pane {
+    -fx-background-color: #f7f9fc;
+    -fx-padding: 20px;
+}
+
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 5px;
+}
+
+.difficulty-box {
+    -fx-background-color: #e8f0fe;
+    -fx-border-color: #b3cde0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 15px;
+}
+
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+}
+
+.primary-button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.primary-button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Secondary button style */
+.secondary-button {
+    -fx-background-color: #bdc3c7;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #95a5a6;
+}
+
+.combo-box {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.combo-box:hover {
+    -fx-border-color: #3498db;
+}

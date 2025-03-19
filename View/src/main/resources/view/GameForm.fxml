@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GameController">
+    <children>
+        <Text fx:id="titleText" layoutX="20.0" layoutY="30.0" style="-fx-font-size: 20px; -fx-font-weight: bold;">
+            <font>
+                <Font name="Verdana Bold" size="20.0" />
+            </font>
+        </Text>
+
+        <HBox spacing="20" style="-fx-alignment: center;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+
+        <VBox layoutX="286.0" layoutY="326.0" spacing="10" style="-fx-alignment: center-right;" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+            <children>
+      
+              <GridPane fx:id="gridPane" hgap="1.0" style="-fx-background-color: #ffffff;" vgap="1.0">
+        </GridPane>
+                <Button fx:id="saveToDatabaseButton" onAction="#saveBoardToDatabase" prefHeight="30.0" prefWidth="200.0" styleClass="primary-button" text="%saveToDatabase.text" />
+                <Button fx:id="saveToFileButton" onAction="#saveBoardToFile" prefHeight="30.0" prefWidth="200.0" styleClass="primary-button" text="%saveToFile.text" />
+            </children>
+        </VBox>
+          <Button fx:id="checkButton" layoutX="20.0" layoutY="438.0" onAction="#checkSudoku" prefHeight="30.0" prefWidth="120.0" styleClass="primary-button" text="%checkSudoku.text" />
+          <Button fx:id="resetButton" layoutX="150.0" layoutY="482.0" onAction="#resetBoard" prefHeight="30.0" prefWidth="100.0" styleClass="secondary-button" text="%resetButton.text" />
+          <Button fx:id="backButton" layoutX="20.0" layoutY="482.0" onAction="#goBackToDifficulty" prefHeight="30.0" prefWidth="100.0" styleClass="secondary-button" text="%backButton.text" />
+    </children>
+</AnchorPane>

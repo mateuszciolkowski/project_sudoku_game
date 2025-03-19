@@ -10,6 +10,12 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+#Folders
+target/
+saves/
+logs/
+log/
+
 # Package Files #
 *.jar
 *.war
