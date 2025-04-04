@@ -4,7 +4,6 @@ Projekt Sudoku był jednym z pierwszych projektów, które zrealizowałem w Javi
 
 ## Umiejętności, które zdobyłem:
 
-W szczególności nauczyłem się:
 - podstaw języka Java i jego struktur
 - użycia JavaFX oraz Scene Builder do stworzenia interfejsu graficznego
 - zastosowania Maven do zarządzania zaleznościami i konfiguracją projektu 
