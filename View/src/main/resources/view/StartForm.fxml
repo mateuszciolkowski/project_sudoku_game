@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" stylesheets="@styleStartForm.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StartFormController">
+    <children>
+        <Label fx:id="difficultLabel" layoutX="20.0" layoutY="20.0" styleClass="title-label" text="%chooseDifficulty.text" />
+
+        <VBox layoutX="20.0" layoutY="60.0" spacing="15" styleClass="difficulty-box">
+            <children>
+                <RadioButton fx:id="easyOption" styleClass="radio-button" text="%easyOption.text">
+               <toggleGroup>
+                  <ToggleGroup fx:id="difficultyGroup" />
+               </toggleGroup></RadioButton>
+                <RadioButton fx:id="mediumOption" styleClass="radio-button" text="%mediumOption.text" toggleGroup="$difficultyGroup" />
+                <RadioButton fx:id="hardOption" styleClass="radio-button" text="%hardOption.text" toggleGroup="$difficultyGroup" />
+            </children>
+        </VBox>
+
+        <Button fx:id="startButton" layoutX="20.0" layoutY="200.0" onAction="#startGame" styleClass="primary-button" text="%startButton.text" />
+
+        <ComboBox fx:id="languageComboBox" layoutX="250.0" layoutY="60.0" onAction="#changeLanguage" prefWidth="150.0" promptText="%languageSet.text" styleClass="combo-box">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="English" />
+                    <String fx:value="Polski" />
+                    <String fx:value="Deutsch" />
+                    <String fx:value="Español" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Button fx:id="loadGameButton" layoutX="250.0" layoutY="172.0" onAction="#loadGame" styleClass="secondary-button" text="%loadGameButton.text" />
+        <Button fx:id="loadFromDatabaseButton" layoutX="250.0" layoutY="220.0" onAction="#loadGameFromDatabase" styleClass="secondary-button" text="%loadFromDatabaseButton.text" />
+        <Button fx:id="authorsButton" layoutX="250.0" layoutY="121.0" onAction="#showAuthors" styleClass="secondary-button" text="%authorsLabel.text" />
+    </children>
+</AnchorPane>
